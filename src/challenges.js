@@ -15,7 +15,7 @@ function calcArea(base, height) {
 function splitSentence(string) {
   return string.split(" ");  
 }
-//console.log(splitSentence('Go trybe'));
+//referência https://www.w3schools.com/jsref/jsref_split.asp
 
 // Desafio 4
 function concatName(names) {
@@ -29,11 +29,25 @@ function concatName(names) {
 function footballPoints(wins, ties) {
   return wins*3 + ties*1;
 }
-//console.log(footballPoints(1,2));   
+//referência https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/return   
 
 // Desafio 6
-function highestCount() {
+function highestCount(number) {
   
+  let biggestNumber = number[0];
+  let repetitions = 0;
+
+  for (let index = 0; index < number.length; index += 1) {
+    if (number[index] > biggestNumber){
+      biggestNumber = number[index];
+    }
+   } 
+   for (let index1 = 0; index1 < number.length; index1 += 1) {
+    if (biggestNumber === number[index1]){
+      repetitions += 1;
+    }
+  } 
+  return repetitions;
 }
 
 // Desafio 7
