@@ -51,13 +51,20 @@ function highestCount(number) {
 }
 
 // Desafio 7
-function catAndMouse() {
-  // seu código aqui
+function catAndMouse(mouse, cat1, cat2) {
+  if (Math.abs(cat1 - mouse) > Math.abs(cat2 - mouse)){
+    return 'cat2';
+  }
+  else if ( Math.abs(cat1 - mouse) < Math.abs(cat2 - mouse)){
+    return 'cat1';
+  }
+  return 'os gatos trombam e o rato foge'
 }
+// referência https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_abs2
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(value1, value2) {
+  
 }
 
 // Desafio 9
