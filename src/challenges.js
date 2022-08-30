@@ -83,12 +83,30 @@ function fizzBuzz(arrayNumbers) {
 // console.log(fizzBuzz([2, 3, 5, 20, 25, 9, 8]));
 
 // Desafio 9
-function encode() {
-  // seu código aqui
+
+function encode(string) {
+  
+  string = string.replaceAll('a', '1');
+  string = string.replaceAll('e', '2');
+  string = string.replaceAll('i', '3');
+  string = string.replaceAll('o', '4');
+  string = string.replaceAll('u', '5');
+
+  return string;
 }
-function decode() {
-  // seu código aqui
+
+function decode(replaced) {
+  
+  replaced = replaced.replaceAll('1','a');
+  replaced = replaced.replaceAll('2','e');
+  replaced = replaced.replaceAll('3','i');
+  replaced = replaced.replaceAll('4','o');
+  replaced = replaced.replaceAll('5','u');
+  
+  return replaced;
 }
+
+// referência: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/String/replaceAll
 
 // Desafio 10
 function techList() {
